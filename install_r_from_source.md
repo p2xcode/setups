@@ -6,6 +6,7 @@ sudo apt-get build-dep r-base
 
 sudo apt-get install build-essential
 sudo apt-get install gfortran
+sudo apt-get install libxml2-dev
 
 export R_VERSION=4.2.2
 curl -O https://cran.rstudio.com/src/base/R-4/R-${R_VERSION}.tar.gz
@@ -26,6 +27,10 @@ sudo make install
 
 sudo ln -s /opt/R/${R_VERSION}/bin/R /usr/local/bin/R
 sudo ln -s /opt/R/${R_VERSION}/bin/Rscript /usr/local/bin/Rscript
+
+sudo chmod -R go+w /opt/R/4.2.2/lib/R/library
+sudo chmod -R go+w /opt/R/4.2.2/lib/R/doc
+
 
 
 # On intel x64 architecture
