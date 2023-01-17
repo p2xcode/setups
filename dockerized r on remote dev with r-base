@@ -1,0 +1,6 @@
+apt-get update
+apt-get install sudo
+apt-get install python3
+install python3-pip
+apt-get install python3-dev
+pip3 install radian
