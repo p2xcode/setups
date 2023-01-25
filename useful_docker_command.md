@@ -13,6 +13,3 @@ docker container run -it --rm --name ubuntu ubuntu /bin/bash
 
 Attach to running container and run bash
 docker exec -i -t my_httpd /bin/bash
-
-Test
-Another test
