@@ -1,6 +1,7 @@
 # Create new identify with a new SSH Key Pair
 
 ssh-keygen -t rsa -b 4096 -f ~/.ssh/user@fqdn.host.name
+
 vi ~/.ssh/config
 
 Host *
